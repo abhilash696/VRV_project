@@ -23,3 +23,8 @@ const userSchema = new mongoose.Schema({
     default: Date.now(),
   },
 });
+
+//create and exporting a user model
+
+const User = mongoose.model("users", userSchema);
+module.exports = User;
