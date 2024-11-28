@@ -148,7 +148,7 @@ Use Postman to test the endpoints. Example collection provided in the postman_co
   => git clone https://github.com/abhilash696/VRV_project.git
 
 2. Install dependencies:
-  => npm install
+  => I already included packages.json so not needed to install any.
 
 3.Set up the .env file:
   Please set up a mongodb instance in MongoDB Atlas.  
