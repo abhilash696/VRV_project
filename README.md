@@ -115,6 +115,8 @@ Use Postman to test the endpoints. Example collection provided in the postman_co
   => npm install
 
 3.Set up the .env file:
+  Please set up a mongodb instance in MongoDB Atlas.  
+  URL : https://www.mongodb.com/products/platform/atlas-database .
   => MONGO_URI= <Your MongoDB URI> eg : <mongodb+srv://username:<password>@cluster0.tqc1i.mongodb.net/
   => JWT_SECRET=<YOUR jwt secret> //any secret string you would like
   
