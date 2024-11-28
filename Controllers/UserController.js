@@ -2,6 +2,8 @@
 const User = require("./../Models/User.js");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+
+//Validator functions validates req.body data using validator npm package
 const register_Validator = require("./../Validators/RegistrationValidator.js");
 const login_Validator = require("./../Validators/LoginValidator.js");
 

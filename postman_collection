@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "368e4c7d-fff8-4bd6-9a08-848e305499e9",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23236620"
+	},
+	"item": [
+		{
+			"name": "User_registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "TestUser2",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "testuser2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "secretpassword",
+							"type": "text"
+						},
+						{
+							"key": "confirmpassword",
+							"value": "secretpassword",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/api/user/register",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "testuser2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "secretpassword",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/api/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Moderator/Admin only route",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDhhYWM1Y2RkYmNhNzJlZGVmMDU0NyIsIm5hbWUiOiJUZXN0VXNlcjIiLCJpYXQiOjE3MzI4MTU1NjcsImV4cCI6MTczMjgxOTE2N30.Mm2y04H9N-R7z1EfMNOk-kP2vPoI2agYrLDmaSScxq4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:5000/api/user/moderatorOrAdmin",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						"moderatorOrAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AdminOnly Route",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDhhYWM1Y2RkYmNhNzJlZGVmMDU0NyIsIm5hbWUiOiJUZXN0VXNlcjIiLCJpYXQiOjE3MzI4MTU1NjcsImV4cCI6MTczMjgxOTE2N30.Mm2y04H9N-R7z1EfMNOk-kP2vPoI2agYrLDmaSScxq4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "67489874002cdcaafa9f0a07",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "Admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/api/user/admin/update_role",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						"admin",
+						"update_role"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
