@@ -1,7 +1,7 @@
 # VRV_project
 This project demonstrates user authentication, authorization, and role-based access control (RBAC), highlighting key features like protected routes and role assignments.
 
-**Features**
+**Features:**
 
  **User Authentication**: Secure user registration and login using JWT.
  **Authorization**: Role-based access control for endpoints.
@@ -9,7 +9,8 @@ This project demonstrates user authentication, authorization, and role-based acc
  **Role Management**: Admins can update user roles via a protected API.
  **Protected Endpoints**: Routes accessible based on user roles (Admin, Moderator, User).
 
-**Admin details for testing**
+**Admin details for testing:**
+
 You can use the below details for starter to test admin routes.
 
 name : "abhilash reddy"
@@ -18,11 +19,12 @@ password: "abhilash"
 
 For moderator routes, update a user's role to Moderator using the admin credentials.
 
-**API Endpoints**
+**API Endpoints:**
 
 **AUTHENTICATION** :
 
 **1. Register User**
+
 Route : POST /api/user/register
 Request Body:
 {
@@ -36,6 +38,7 @@ Success: 201 Created
 Failure: 400 Email already exists
 
 **2. Login User**
+
 Route : POST /api/user/login
 Request Body:
 {
@@ -50,7 +53,9 @@ Response:
 **ROLE MANAGEMENT**
 
 **3. Update User Role (Admin-only accesible route)**
+
 **Protected Route**
+
 Route : PUT /api/user/admin/update_role
 
 Headers:
