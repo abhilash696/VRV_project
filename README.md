@@ -26,6 +26,7 @@ For moderator routes, update a user's role to Moderator using the admin credenti
 **1. Register User**
 
 Route : POST /api/user/register
+
 Request Body:
 {
   "name": "John Doe",
