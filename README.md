@@ -4,9 +4,13 @@ This project demonstrates user authentication, authorization, and role-based acc
 **Features:**
 
  **User Authentication**: Secure user registration and login using JWT.
+ 
  **Authorization**: Role-based access control for endpoints.
+ 
  **Default Role Assignment**: New users are assigned the User role by default.
+ 
  **Role Management**: Admins can update user roles via a protected API.
+ 
  **Protected Endpoints**: Routes accessible based on user roles (Admin, Moderator, User).
 
 **Admin details for testing:**
