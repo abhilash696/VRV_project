@@ -115,8 +115,8 @@ Use Postman to test the endpoints. Example collection provided in the postman_co
   => npm install
 
 3.Set up the .env file:
-  => MONGO_URI=mongodb+srv://abhilashreddy340:XnBt8aN5vFfRfcK1@cluster0.tqc1i.mongodb.net/
-  => JWT_SECRET=Mysecretkeyforsecurityconfigurations or <YOUR jwt secret>
+  => MONGO_URI= <Your MongoDB URI> eg : <mongodb+srv://username:<password>@cluster0.tqc1i.mongodb.net/
+  => JWT_SECRET=<YOUR jwt secret> //any secret string you would like
   
 4.Start the server:
   => npm run server
