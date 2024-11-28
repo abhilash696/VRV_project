@@ -1,7 +1,7 @@
 # VRV_project
 This project demonstrates user authentication, authorization, and role-based access control (RBAC), highlighting key features like protected routes and role assignments.
 
-**Features**
+Features
  **User Authentication**: Secure user registration and login using JWT.
  **Authorization**: Role-based access control for endpoints.
  **Default Role Assignment**: New users are assigned the User role by default.
