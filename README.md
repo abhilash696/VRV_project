@@ -139,4 +139,3 @@ Use Postman to test the endpoints. Example collection provided in the postman_co
 
 License
 This project is licensed under the MIT License.
-
